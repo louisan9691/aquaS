@@ -11,42 +11,45 @@
     <!-- For iPhone: -->
     <title>AquaS Sydney's best soft serve</title>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <!-- <link href="style.css" type="text/css" rel="stylesheet"> -->
+    <link href="./stylesheet/css/home.css" type="text/css" rel="stylesheet">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   </head>
   <body>
   <div class="wrapper">
   <!-- Navigation section -->
-  <nav>
-    <a href="#">Home</a><img src="./images/aqua_S_logo.png" alt="aquaS' logo">
-    <a href="#">About us</a>
-    <a href="#">Flavours</a>
-    <a href="#">Location</a>
-    <a href="#">Contact us</a>
+  <nav class="navbar-fixed-top">
+    <a href="./index.html"><img src="./images/aqua_S_logo.png" id="nav-logo" alt="aquaS' logo"></a>
+    <a href="./index.html" class="nav-link">Home</a>
+    <a href="#" class="nav-link">About us</a>
+    <a href="#" class="nav-link">Flavours</a>
+    <a href="#" class="nav-link">Location</a>
+    <a href="#" class="nav-link">Contact us</a>
   </nav>
 
   <!-- Header/Banner -->
   <header>
     <div class="banner">
-      <h1>SEA SALT SOFT SERVE</h1>
+      <img src="./images/banner-2x.png" alt="aquaS banner">
     </div>
   </header>
 
   <!-- BODY ----------------------------->
   <div class="body">
-    <p>Sydney's best soft serve</p>
+    <h3>Sydney's best soft serve</h3>
     <div class="social-media">
-      <a href="#"><img src="" alt="Facebook"></a>
-      <a href="#"><img src="" alt="Instagram"></a>
-      <a href="#"><img src="" alt="Wechat"></a>
+      <a href="#"><img src="./images/facebook-2x.png" alt="Facebook"></a>
+      <a href="#"><img src="./images/instagram-2x.png" alt="Instagram"></a>
+      <a href="#"><img src="./images/wechat.png" alt="Wechat"></a>
     </div>
   </div>
 
 <!-- FOOTER ------------------------------->
   <footer>
-    <div class="footer-1">
-      <img src="./images/aqua_S_logo.png" alt="aquaS' logo">
+    <div class="footer-section-1">
+      <img src="./images/aqua_S_logo_white.png" alt="aquaS' logo">
     </div>
-    <div class="footer-2">
+    <div class="footer-section-2">
       <div class="footer-row-1">
         <ul>
           <span class="footer-heading">NAVIGATION</span>
@@ -61,8 +64,8 @@
       <div class="footer-row-2">
         <ul>
           <span class="footer-heading">OPENING HOURS</span>
-          <li>Open Daily</li>
-          <li>10AM - 8PM</li>
+          <li><p>Open Daily</p></li>
+          <li><p>10AM - 8PM</p></li>
         </ul>
       </div>
 
@@ -79,18 +82,26 @@
         <ul>
           <span class="footer-heading">CONTACT US</span>
           <li><a href="#">email@aquas.com</a></li>
-          <li><a href="#"><img src="" alt="Facebook"></a></li>
-          <li><a href="#"><img src="" alt="Instagram"></a></li>
-          <li><a href="#"><img src="" alt="Wechat"></a></li>
         </ul>
+        <div class="social-media">
+          <a href="#"><img src="./images/facebook_white-2x.png" alt="Facebook"></a>
+          <a href="#"><img src="./images/instagram_white-2x.png" alt="Instagram"></a>
+          <a href="#"><img src="./images/wechat.png" alt="Wechat"></a>
+        </div>
       </div>
     </div>
+
+  <div class="footer-section-3">
+    <a href="#">Privacy policy</a>
+    <a href="#">Terms &amp; Conditions</a>
+    <a>© 2017 aquaS. All rights reserved.</a>
+  </div>
   </footer>
 
 
 
 
 </div>
-  <script type="text/javascript" src=""></script>
+  <script type="text/javascript" src="./js/navbar.js"></script>
   </body>
 </html>
