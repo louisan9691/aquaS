@@ -1,0 +1,91 @@
+// --------------- BODY ----------------------------
+*
+  +reset
+  font: 1em/1.375em $body-font
+  -webkit-font-smoothing: antialiased !important
+  letter-spacing: 0.063rem
+  box-sizing: border-box
+
+body
+  position: relative
+  overflow-x: hidden
+  background-color: #CDE5D5
+
+//------------- GREETING ---------------------
+.body
+  margin-top: 20vh
+  text-align: center
+  .greeting
+    text-align: center
+    margin-bottom: 10vh
+    h1
+      +h1
+      color: $font-color
+      font-family: $lora
+      font-weight: normal
+      font-size: 4em
+    h4
+      +h4
+      color: $font-color
+      font-weight: lighter
+      font-size: 1em
+  .form
+    form
+      input[type="text"], input[type="email"]
+        margin-bottom: 5vh
+        background-color: #CDE5D5
+        width: 30vw
+        padding: 5px
+        border: none
+        border-bottom: 2px solid $grey
+        &::placeholder
+          text-align: center
+          color: #bcbabb
+          font-size: 0.8em
+        &:focus
+          border: 2px solid $green
+          outline: none
+      label
+        border: 0
+        display: block
+
+
+
+      .enquiry-type
+        margin-bottom: 5vh
+        justify-content: center
+        display: flex
+        flex-direction: row
+        input[type=radio]
+          margin-right: 5px
+        label
+          margin-right: 20px
+          color: #bcbabb
+      textarea
+        width: 30vw
+        height: 150px
+        padding: 12px 20px
+        box-sizing: border-box
+        border: 2px solid $grey
+        border-radius: 4px
+        background-color: $grey
+        resize: none
+        &::placeholder
+          text-align: center
+          color: #bcbabb
+          font-size: 0.8em
+        &:focus
+          border: 2px solid $green
+          outline: none
+      input[type="submit"]
+        padding: 5px 30px
+        border: 2px solid $grey
+        background-color: #CDE5D5
+        color: $font-color
+        cursor: pointer
+        &:focus
+          outline: none
+
+    .error
+      color: red
+      font-size: 0.8em

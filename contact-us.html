@@ -2,16 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="description" content="About us AquaS">
+    <meta name="description" content="AquaS Contact Us">
     <meta name="keywords" content="Soft serve ice cream">
     <meta name="author" content="Louis An">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>About us</title>
+    <title>Contact us</title>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <link href="./stylesheet/css/about-us.css" type="text/css" rel="stylesheet">
-    <!-- Google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+    <link href="./stylesheet/css/contact-us.css" type="text/css" rel="stylesheet">
   </head>
   <body>
     <div class="wrapper">
@@ -19,34 +18,42 @@
     <nav class="navbar-fixed-top">
       <a href="./index.html"><img src="./images/aqua_S_logo.png" id="nav-logo" alt="aquaS' logo"></a>
       <a href="./index.html" class="nav-link">Home</a>
-      <a href="./about-us.html" class="nav-link current">About us</a>
+      <a href="./about-us.html" class="nav-link">About us</a>
       <a href="./flavours.html" class="nav-link">Flavours</a>
       <a href="./locations.html" class="nav-link">Locations</a>
-      <a href="./contact-us.html" class="nav-link">Contact us</a>
+      <a href="./contact-us.html" class="nav-link current">Contact us</a>
     </nav>
 
-    <!-- Header/Banner -->
-    <header>
-      <div class="banner">
-        <img src="./images/about-us-photo.png" alt="About us photo">
-      </div>
-      <div class="title">
-        <h2>MISSION &amp; VISION</h2>
-        <h4>Aqua blue</h4>
-        <h4>Sea Salt Soft Serve</h4>
-      </div>
-    </header>
 
-    <!--    MAIN CONTENT ------------------->
-    <div class="body">
-      <p>It all started off when the founders who are always actively looking for desserts all over the world, have finally decided to bring soft serve to the next level. <br><br>
-      The idea of doing sea salt soft serve initially came from Okinawa, Japan. Yet, Aqua S further developed our soft serves into a work of art.
-      This is why, besides the adventurous tastiness of our soft serves, you will find it irresistible to the beauty of our presentation of products.
-      Fun, innovative and exquisiteness are the key elements for Aqua S. Thus apart from our signature flavor, there are two other varieties that will be changed fortnightly. <br><br>
+    <!-- MAIN CONTENT -------------------->
+<div class="body">
+  <div class="greeting">
+    <h1>HELLO</h1>
+    <h4>Leave us a message ! We’d love to hear from you</h4>
+  </div>
 
-      The color aqua blue in our establishment perfectly aligns with our signature soft serves. Together with our feature wall with clouds, it sets our magical and dreamlike corporate image and identity. <br><br>
-      Aqua S loves to see those smiles on our customers’ faces and we are passionate in what we are doing to share happiness to more.</p>
-    </div>
+  <div class="form">
+    <form id="enquiry" action="https://formspree.io/louis.an9691@gmail.com"
+      method="POST">
+      <input type="text" name="name" placeholder="NAME" required ><br><br>
+      <input type="email" name="email" placeholder="EMAIL" required data-message="Invalid email address"><br><br>
+      <div class="enquiry-type">
+        <input id="general" type="radio" name="type" value="general" checked>
+        <label for="general">General</label><br>
+
+        <input id="business" type="radio" name="type" value="business">
+        <label for="business">Business</label><br>
+
+        <input id="feedback" type="radio" name="type" value="feedback">
+        <label for="feedback">Feedback</label><br />
+      </div>
+      <textarea name="message" rows="8" cols="80" placeholder="MESSAGE"></textarea><br><br>
+      <input type="submit" id="submit" value="Submit" >
+    </form>
+  </div>
+</div>
+
+
 
 
     <!-- FOOTER ------------------------------->
@@ -103,7 +110,8 @@
       </div>
       </footer>
     </div>
-      <script type="text/javascript" src="./js/navbar.js"></script>
 
+    <script type="text/javascript" src="./js/navbar.js"></script>
+    <script type="text/javascript" src="./js/validation.js"></script>
   </body>
 </html>
