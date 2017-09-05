@@ -1,0 +1,48 @@
+// --------------- BODY ----------------------------
+*
+  +reset
+  font: 1em/1.375em $body-font
+  -webkit-font-smoothing: antialiased !important
+  letter-spacing: 0.063rem
+  box-sizing: border-box
+
+body
+  position: relative
+  overflow-x: hidden
+  background-color: #F4D8D0
+
+
+// ------------------ MAIN CONTENT -------------------
+.body
+  .bg
+    text-align: center
+    margin-bottom: 20px
+    h1
+      +h1
+      font-family: $lora
+      font-weight: lighter
+      font-size: 4em
+    img
+      margin-top: 10vh
+      height: 30vh
+      width: 30vw
+    .locations
+      background-color: white
+      width: 60vw
+      height: 100%
+      margin: 0px auto
+      margin-top: 50px
+      padding-top: 50px
+      text-align: justify
+      padding-left: 5%
+      h1
+        +h3
+        font-weight: bold
+        color: $green
+      h4
+        +h4
+        font-size: 1em
+        color: $font-color
+        text-transform: lowercase
+        font-weight: lighter
+        font-family: $lora
