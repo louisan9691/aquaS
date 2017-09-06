@@ -46,3 +46,98 @@ body
         text-transform: lowercase
         font-weight: lighter
         font-family: $lora
+
+
+
+// ------------------- MEDIA QUERIES --------------------
+//------------- IPHONE 5 ------------------------------
++breakpoint(s-mobile)
+  .wrapper
+    overflow-x: hidden
+    .body
+      .bg
+        img
+          display: none
+        >h1
+          margin-top: 20vh
+          font-size: 3em
+      .locations
+        width: 90vw
+        h1
+          font-size: 1.5em
+        h4
+          font-size: 0.8em
+
+//------------- IPHONE 6 ------------------------------
++breakpoint(mobile)
+  .wrapper
+    overflow-x: hidden
+    .body
+      .bg
+        img
+          display: none
+        >h1
+          margin-top: 20vh
+          font-size: 2.8em
+      .locations
+        width: 90vw
+        h1
+          font-size: 1.5em
+        h4
+          font-size: 0.8em
+
+//------------- IPHONE 6 PLUS ------------------------------
++breakpoint(mobile-plus)
+  .wrapper
+    overflow-x: hidden
+    .body
+      .bg
+        img
+          display: none
+        >h1
+          margin-top: 20vh
+          font-size: 3em
+      .locations
+        width: 90vw
+        h1
+          font-size: 1.7em
+        h4
+          font-size: 1em
+
+
+
+//------------- IPAD ------------------------------
++breakpoint(ipad)
+  .wrapper
+    overflow-x: hidden
+    .body
+      .bg
+        img
+          display: none
+        >h1
+          margin-top: 15vh
+          font-size: 3em
+      .locations
+        width: 90vw
+        h1
+          font-size: 1.7em
+        h4
+          font-size: 1em
+
+//------------- IPAD  PRO ------------------------------
++breakpoint(ipad-pro)
+  .wrapper
+    overflow-x: hidden
+    .body
+      .bg
+        img
+          display: none
+        >h1
+          margin-top: 15vh
+          font-size: 3em
+      .locations
+        width: 90vw
+        h1
+          font-size: 2em
+        h4
+          font-size: 1.2em

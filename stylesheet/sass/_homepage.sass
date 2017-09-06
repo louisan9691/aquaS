@@ -35,3 +35,77 @@ body
         width: 20px
         height: 20px
         margin-left: 20px
+
+//---------- MEDIA QUERIES --------------
+
+
+// ------------------- IPHONE  5 --------------------
+//------------- IPHONE 5
++breakpoint(s-mobile)
+  .wrapper
+    overflow-x: hidden
+    header
+      .banner
+        img
+          width: 100vw
+    .body
+      h3
+        font-size: 1em
+      .social-media
+        top: 20px
+        left: 50%
+        transform: translateX(-50%)
+        img
+          width: 10px
+          height: 10px
+
+
+
+//------------- IPHONE 6 ------------------
++breakpoint(mobile)
+  .wrapper
+    overflow-x: hidden
+    header
+      .banner
+        img
+          width: 100vw
+    .body
+      h3
+        font-size: 1em
+      .social-media
+        top: 20px
+        left: 50%
+        transform: translateX(-50%)
+        img
+          width: 10px
+          height: 10px
+
+//------------- IPHONE 6  PLUS------------------
++breakpoint(mobile-plus)
+  .wrapper
+    overflow-x: hidden
+    header
+      .banner
+        img
+          width: 100vw
+    .body
+      h3
+        font-size: 1em
+      .social-media
+        width: 30%
+        top: 20px
+        left: 50%
+        transform: translateX(-50%)
+        img
+          width: 10px
+          height: 10px
+
+
+//------------- IPAD PRO ------------------
++breakpoint(ipad-pro)
+  .wrapper
+    overflow-x: hidden
+    header
+      .banner
+        img
+          padding-top: 120px

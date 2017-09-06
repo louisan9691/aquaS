@@ -42,3 +42,53 @@ body
   width: 70vw
   p
     color: $font-color
+
+
+
+// ------------------- MEDIA QUERIES --------------------
+//------------- IPHONE 5
++breakpoint(s-mobile)
+  .wrapper
+    overflow-x: hidden
+    .title
+      left: 0
+    .body
+      p
+        width: 100%
+        margin: -10px -10px
+        font-size: 0.9em
+
+//------------- IPHONE 6 --------------
++breakpoint(mobile)
+  .wrapper
+    overflow-x: hidden
+    .title
+      left: 0
+    .body
+      p
+        width: 100%
+        margin: -10px -10px
+        font-size: 0.9em
+
+
+
+//------------- IPHONE 6 PLUS--------------
++breakpoint(mobile-plus)
+  .wrapper
+    overflow-x: hidden
+    .title
+      left: 0
+    .body
+      p
+        width: 100%
+        margin: -10px -10px
+        font-size: 0.9em
+
+
+//------------- IPAD PRO-------------
++breakpoint(ipad-pro)
+  .wrapper
+    overflow-x: hidden
+    header
+      .title
+        top: 85vh

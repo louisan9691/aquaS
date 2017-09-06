@@ -15,9 +15,65 @@ body
 body
   .gallery
     display: flex
-    width: 60%
+    width: 45%
     margin: 20vh auto
     img
       margin: 20px
       height: 300px
       width: 300px
+
+// ------------------- MEDIA QUERIES --------------------
+//------------- IPHONE 5 ------------------------------
++breakpoint(s-mobile)
+  .wrapper
+    overflow-x: hidden
+    .gallery
+      width: 100%
+      img
+        height: 100px
+        width: 100px
+
+
+//------------- IPHONE 6 -----------------------------
++breakpoint(mobile)
+  .wrapper
+    overflow-x: hidden
+    .gallery
+      width: 100%
+      img
+        height: 140px
+        width: 140px
+
+
+
+//------------- IPHONE 6 PLUS -----------------------------
++breakpoint(mobile-plus)
+  .wrapper
+    overflow-x: hidden
+    .gallery
+      width: 100%
+      img
+        height: 160px
+        width: 160px
+
+
+//------------- IPAD -----------------------------
++breakpoint(ipad)
+  .wrapper
+    overflow-x: hidden
+    .gallery
+      width: 75%
+      img
+        height: 240px
+        width: 240px
+
+
+//------------- IPAD PRO -----------------------------
++breakpoint(ipad-pro)
+  .wrapper
+    overflow-x: hidden
+    .gallery
+      width: 75%
+      img
+        height: 300px
+        width: 300px

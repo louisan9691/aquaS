@@ -1,14 +1,13 @@
 body
   nav
     position: fixed
-    z-index: 10
+    z-index: 20
     top: 10px
     left: 0px
     background-color: transparent
     #nav-logo
       height: 8vh
       width: 10vw
-      margin-right: 50px
     a
       +a
       margin-left: 100px
@@ -42,3 +41,70 @@ body
     content: url("../../images/aqua_S_logo_white.png")
   .nav-link
     color: white
+
+
+//---------- MEDIA QUERIES --------------
+// --------------IPHONE 5 -------------------
++breakpoint(s-mobile)
+  body
+    nav
+      #nav-logo
+        height: 10vh
+        width: 20vw
+        margin-left: 10px
+      a
+        margin-left: 120px
+        &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6)
+          display: none
+
+
+// --------------IPHONE 6 -------------------
++breakpoint(mobile)
+  body
+    nav
+      #nav-logo
+        height: 10vh
+        width: 20vw
+        margin-left: 20px
+      a
+        margin-left: 120px
+        &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6)
+          display: none
+
+
+// --------------IPHONE 6 PLUS -------------------
++breakpoint(mobile-plus)
+  body
+    nav
+      #nav-logo
+        height: 10vh
+        width: 20vw
+        margin-left: 40px
+      a
+        margin-left: 120px
+        &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6)
+          display: none
+
+
+// --------------IPAD -------------------
++breakpoint(ipad)
+  body
+    nav
+      #nav-logo
+        width: 20vw
+        height: 7vh
+      a
+        margin-left: 20px
+
+
+// --------------IPAD PRO -------------------
++breakpoint(ipad-pro)
+  body
+    nav
+      #nav-logo
+        width: 20vw
+        height: 7vh
+        margin-left: 50px
+      a
+        margin-left: 20px
+        font-size: 1.5em
