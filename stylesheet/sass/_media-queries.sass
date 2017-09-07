@@ -1,18 +1,33 @@
 =breakpoint($min)
   @if $min == s-mobile
-    @media screen and (min-width: 319px) and (max-width: 374px)
+    @media screen and (min-width: 319px) and (max-width: 374px) and (orientation: portrait)
+      @content
+  @else if $min == s-mobile-land
+    @media only screen and (max-width: 569px) and (orientation: landscape)
       @content
   @else if $min == mobile
-    @media screen and (min-width: 374px) and (max-width: 413px)
+    @media screen and (min-width: 374px) and (max-width: 413px) and (orientation: portrait)
+      @content
+  @else if $min == mobile-land
+    @media screen and (max-width: 667px) and (min-width: 570px) and (orientation: landscape)
       @content
   @else if $min == mobile-plus
-    @media screen and (min-width: 413px) and (max-width: 767px)
+    @media screen and (min-width: 413px) and (max-width: 767px) and (orientation: portrait)
+      @content
+  @else if $min == mobile-plus-land
+    @media screen and (max-width: 737px) and (min-width: 668px) and (orientation: landscape)
       @content
   @else if $min == ipad
-    @media screen and (min-width: 767px) and (max-width: 1023px)
+    @media screen and (min-width: 767px) and (max-width: 1023px) and (orientation: portrait)
+      @content
+  @else if $min == ipad-land
+    @media screen and (max-width: 1025px) and (min-width: 738px) and (orientation: landscape)
       @content
   @else if $min == ipad-pro
-    @media screen and (min-width: 1023px) and (max-width: 1279px)
+    @media screen and (min-width: 1023px) and (max-width: 1279px) and (orientation: portrait)
+      @content
+  @else if $min == ipad-pro-land
+    @media screen and (max-width: 1367px) and (min-width: 1360px) and (orientation: landscape)
       @content
   @else if $min == laptop
     @media screen and (min-width: 1279px) and (max-width: 1439px)

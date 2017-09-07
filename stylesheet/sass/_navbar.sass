@@ -41,6 +41,8 @@ body
     content: url("../../images/aqua_S_logo_white.png")
   .nav-link
     color: white
+  .current
+    color: $blue
 
 
 //---------- MEDIA QUERIES --------------
@@ -58,6 +60,22 @@ body
           display: none
 
 
+// --------------IPHONE 5 LANDSCAPE-------------------
++breakpoint(s-mobile-land)
+  body
+    nav
+      #nav-logo
+        height: 15vh
+        width: 20vw
+        margin-left: 20vw
+      a
+        margin-left: 120px
+        &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6)
+          display: none
+
+
+
+
 // --------------IPHONE 6 -------------------
 +breakpoint(mobile)
   body
@@ -70,6 +88,22 @@ body
         margin-left: 120px
         &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6)
           display: none
+
+// --------------IPHONE 6 LANDSCAPE-------------------
++breakpoint(mobile-land)
+  body
+    nav
+      #nav-logo
+        height: 15vh
+        width: 20vw
+        margin-left: 24vw
+      a
+        margin-left: 120px
+        &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6)
+          display: none
+
+
+
 
 
 // --------------IPHONE 6 PLUS -------------------
@@ -85,6 +119,23 @@ body
         &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6)
           display: none
 
+// --------------IPHONE 6 PLUS LANDSCAPE -------------------
++breakpoint(mobile-plus-land)
+  body
+    nav
+      #nav-logo
+        height: 15vh
+        width: 20vw
+        margin-left: 25vw
+      a
+        margin-left: 120px
+        &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(5), &:nth-child(6)
+          display: none
+
+
+
+
+
 
 // --------------IPAD -------------------
 +breakpoint(ipad)
@@ -93,6 +144,16 @@ body
       #nav-logo
         width: 20vw
         height: 7vh
+      a
+        margin-left: 20px
+
+// --------------IPAD LANDSCAPE -------------------
++breakpoint(ipad-land)
+  body
+    nav
+      #nav-logo
+        width: 20vw
+        height: 12vh
       a
         margin-left: 20px
 

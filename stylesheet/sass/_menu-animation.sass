@@ -80,14 +80,14 @@ $green: #2b9871
       margin-bottom: 20px
     a
       margin-left: 10px
-      color: $green
+      color: $blue
       font-size: 1.5em
       text-decoration: none
       font-weight: lighter
       &:hover, &:focus, &:active
         font-size: 1.5em
         font-weight: normal
-        color: $green
+        color: $blue
 
 
 //---------------- MEDIA QUERIES FOR NAV BAR -----------------
@@ -105,8 +105,8 @@ $green: #2b9871
     ul
       margin-top: 170px
 
-//------- iphone 5
-@media screen and (min-width: 319px) and (max-width: 374px)
+//------- iphone 5 ---------------------
++breakpoint(s-mobile)
   +mobile-nav
   .hide
     display: block
@@ -114,18 +114,63 @@ $green: #2b9871
     ul
       margin-top: 130px
 
-//------- iphone 6
-@media screen and (min-width: 374px) and (max-width: 413px)
+
+//------- iphone 5 landscape ---------------------
++breakpoint(s-mobile-land)
+  +mobile-nav
+  .hide
+    display: block
+  .menu-side
+    ul
+      margin-top: 80px
+      a
+        font-size: 1.0em
+        font-weight: lighter
+
+
+
+
+
+
+//------- iphone 6 ----------------------------
++breakpoint(mobile)
   +mobile-nav
   .hide
     display: block
 
 
+
+//------- iphone 6 landscape ----------------------------
++breakpoint(mobile-land)
+  +mobile-nav
+  .hide
+    display: block
+  .menu-side
+    ul
+      margin-top: 100px
+      a
+        font-size: 1.2em
+        font-weight: lighter
+
+
 //------- iphone 6+
-@media screen and (min-width: 413px) and (max-width: 767px)
++breakpoint(mobile-plus)
   +mobile-nav
   .hide
     display: block
   .menu-side
     ul
       margin-top: 200px
+
+
+//------- iphone 6+ landscape
++breakpoint(mobile-plus-land)
+  +mobile-nav
+  .hide
+    display: block
+  .menu-side
+    ul
+      margin-top: 120px
+      a
+        font-size: 1.4em
+        font-weight: lighter
